@@ -29,7 +29,7 @@ struct SessionView: View {
     func StartingView() -> some View {
         // 3
         if isSignedIn {
-            Text("Signed in")
+            MainTabView()
         } else {
             LoginView()
         }
