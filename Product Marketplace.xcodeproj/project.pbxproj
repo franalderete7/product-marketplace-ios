@@ -31,6 +31,8 @@
 		D15AC32029F5F14800031165 /* Products+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15AC31F29F5F14800031165 /* Products+Extensions.swift */; };
 		D15AC32229F5F57600031165 /* HomeRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15AC32129F5F57600031165 /* HomeRoute.swift */; };
 		D15AC32429F5F60600031165 /* PostProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15AC32329F5F60600031165 /* PostProductView.swift */; };
+		D15AC32629F5F72300031165 /* ProductDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15AC32529F5F72300031165 /* ProductDetailsView.swift */; };
+		D15AC32829F5F7FE00031165 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15AC32729F5F7FE00031165 /* HomeView.swift */; };
 		D190620629F2D58F0033A5EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D190620529F2D58F0033A5EE /* Assets.xcassets */; };
 		D190620929F2D58F0033A5EE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D190620829F2D58F0033A5EE /* Preview Assets.xcassets */; };
 		D190621129F2E8D30033A5EE /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = D190621029F2E8D30033A5EE /* Amplify */; };
@@ -58,6 +60,8 @@
 		D15AC31F29F5F14800031165 /* Products+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Products+Extensions.swift"; sourceTree = "<group>"; };
 		D15AC32129F5F57600031165 /* HomeRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRoute.swift; sourceTree = "<group>"; };
 		D15AC32329F5F60600031165 /* PostProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostProductView.swift; sourceTree = "<group>"; };
+		D15AC32529F5F72300031165 /* ProductDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsView.swift; sourceTree = "<group>"; };
+		D15AC32729F5F7FE00031165 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		D19061FE29F2D58D0033A5EE /* Product Marketplace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Product Marketplace.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D190620129F2D58D0033A5EE /* Product_MarketplaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product_MarketplaceApp.swift; sourceTree = "<group>"; };
 		D190620329F2D58D0033A5EE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -113,11 +117,13 @@
 			children = (
 				D12D2D2129F3217E002673BC /* models */,
 				D190620129F2D58D0033A5EE /* Product_MarketplaceApp.swift */,
+				D15AC32529F5F72300031165 /* ProductDetailsView.swift */,
 				D15AC32129F5F57600031165 /* HomeRoute.swift */,
 				D15AC32329F5F60600031165 /* PostProductView.swift */,
 				D12D2D2929F32FA5002673BC /* UserState.swift */,
 				D15AC31F29F5F14800031165 /* Products+Extensions.swift */,
 				D12D2D3029F37332002673BC /* AvatarView.swift */,
+				D15AC32729F5F7FE00031165 /* HomeView.swift */,
 				D15AC31629F5888600031165 /* ImagePickerView.swift */,
 				D12D2D3729F46179002673BC /* MainTabView.swift */,
 				D12D2D3529F460AE002673BC /* UserProfileView.swift */,
@@ -252,9 +258,11 @@
 				D15AC32429F5F60600031165 /* PostProductView.swift in Sources */,
 				D15AC31E29F5F06B00031165 /* Product+Schema.swift in Sources */,
 				D12D2D1329F31F08002673BC /* LoginView.swift in Sources */,
+				D15AC32629F5F72300031165 /* ProductDetailsView.swift in Sources */,
 				D12D2D1429F31F08002673BC /* SignUpView.swift in Sources */,
 				D12D2D3829F46179002673BC /* MainTabView.swift in Sources */,
 				D12D2D1529F31F08002673BC /* ConfirmSignUpView.swift in Sources */,
+				D15AC32829F5F7FE00031165 /* HomeView.swift in Sources */,
 				D12D2D1629F31F08002673BC /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
