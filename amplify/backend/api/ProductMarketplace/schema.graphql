@@ -1,4 +1,14 @@
+type Product @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String!
+  price: Int!
+  imageKey: String!
+  productDescription: String
+  userId: ID!
+}
+
 type User @model @auth(rules: [{allow: public}]) {
   id: ID!
   username: String!
 }
+ 

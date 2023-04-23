@@ -23,6 +23,14 @@
 		D12D2D3429F373A5002673BC /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D12D2D3329F373A5002673BC /* Kingfisher */; };
 		D12D2D3629F460AE002673BC /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12D2D3529F460AE002673BC /* UserProfileView.swift */; };
 		D12D2D3829F46179002673BC /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12D2D3729F46179002673BC /* MainTabView.swift */; };
+		D15AC31529F46FE000031165 /* AWSS3StoragePlugin in Frameworks */ = {isa = PBXBuildFile; productRef = D15AC31429F46FE000031165 /* AWSS3StoragePlugin */; };
+		D15AC31729F5888600031165 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15AC31629F5888600031165 /* ImagePickerView.swift */; };
+		D15AC31929F5EE9C00031165 /* ProductGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15AC31829F5EE9C00031165 /* ProductGridCell.swift */; };
+		D15AC31C29F5F06000031165 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15AC31B29F5F06000031165 /* Product.swift */; };
+		D15AC31E29F5F06B00031165 /* Product+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15AC31D29F5F06B00031165 /* Product+Schema.swift */; };
+		D15AC32029F5F14800031165 /* Products+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15AC31F29F5F14800031165 /* Products+Extensions.swift */; };
+		D15AC32229F5F57600031165 /* HomeRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15AC32129F5F57600031165 /* HomeRoute.swift */; };
+		D15AC32429F5F60600031165 /* PostProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15AC32329F5F60600031165 /* PostProductView.swift */; };
 		D190620629F2D58F0033A5EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D190620529F2D58F0033A5EE /* Assets.xcassets */; };
 		D190620929F2D58F0033A5EE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D190620829F2D58F0033A5EE /* Preview Assets.xcassets */; };
 		D190621129F2E8D30033A5EE /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = D190621029F2E8D30033A5EE /* Amplify */; };
@@ -43,6 +51,13 @@
 		D12D2D3029F37332002673BC /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
 		D12D2D3529F460AE002673BC /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
 		D12D2D3729F46179002673BC /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		D15AC31629F5888600031165 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		D15AC31829F5EE9C00031165 /* ProductGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductGridCell.swift; sourceTree = "<group>"; };
+		D15AC31B29F5F06000031165 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		D15AC31D29F5F06B00031165 /* Product+Schema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Product+Schema.swift"; sourceTree = "<group>"; };
+		D15AC31F29F5F14800031165 /* Products+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Products+Extensions.swift"; sourceTree = "<group>"; };
+		D15AC32129F5F57600031165 /* HomeRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRoute.swift; sourceTree = "<group>"; };
+		D15AC32329F5F60600031165 /* PostProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostProductView.swift; sourceTree = "<group>"; };
 		D19061FE29F2D58D0033A5EE /* Product Marketplace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Product Marketplace.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D190620129F2D58D0033A5EE /* Product_MarketplaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product_MarketplaceApp.swift; sourceTree = "<group>"; };
 		D190620329F2D58D0033A5EE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D15AC31529F46FE000031165 /* AWSS3StoragePlugin in Frameworks */,
 				D12D2D3429F373A5002673BC /* Kingfisher in Frameworks */,
 				D190622229F313590033A5EE /* AWSDataStorePlugin in Frameworks */,
 				D190621129F2E8D30033A5EE /* Amplify in Frameworks */,
@@ -74,6 +90,8 @@
 			isa = PBXGroup;
 			children = (
 				D12D2D2329F32298002673BC /* AmplifyModels.swift */,
+				D15AC31B29F5F06000031165 /* Product.swift */,
+				D15AC31D29F5F06B00031165 /* Product+Schema.swift */,
 				D12D2D2429F32298002673BC /* User.swift */,
 				D12D2D2529F32298002673BC /* User+Schema.swift */,
 				D190620029F2D58D0033A5EE /* Product Marketplace */,
@@ -95,8 +113,12 @@
 			children = (
 				D12D2D2129F3217E002673BC /* models */,
 				D190620129F2D58D0033A5EE /* Product_MarketplaceApp.swift */,
+				D15AC32129F5F57600031165 /* HomeRoute.swift */,
+				D15AC32329F5F60600031165 /* PostProductView.swift */,
 				D12D2D2929F32FA5002673BC /* UserState.swift */,
+				D15AC31F29F5F14800031165 /* Products+Extensions.swift */,
 				D12D2D3029F37332002673BC /* AvatarView.swift */,
+				D15AC31629F5888600031165 /* ImagePickerView.swift */,
 				D12D2D3729F46179002673BC /* MainTabView.swift */,
 				D12D2D3529F460AE002673BC /* UserProfileView.swift */,
 				D12D2D2D29F33014002673BC /* SessionView.swift */,
@@ -104,6 +126,7 @@
 				D190621629F2ED870033A5EE /* LoginView.swift */,
 				D190621829F2EE120033A5EE /* SignUpView.swift */,
 				D190621A29F2EE990033A5EE /* ConfirmSignUpView.swift */,
+				D15AC31829F5EE9C00031165 /* ProductGridCell.swift */,
 				D190621229F2EBEC0033A5EE /* amplifyconfiguration.json */,
 				D190621329F2EBEC0033A5EE /* awsconfiguration.json */,
 				D190620329F2D58D0033A5EE /* ContentView.swift */,
@@ -149,6 +172,7 @@
 				D190621D29F2FE2C0033A5EE /* AWSCognitoAuthPlugin */,
 				D190622129F313590033A5EE /* AWSDataStorePlugin */,
 				D12D2D3329F373A5002673BC /* Kingfisher */,
+				D15AC31429F46FE000031165 /* AWSS3StoragePlugin */,
 			);
 			productName = "Product Marketplace";
 			productReference = D19061FE29F2D58D0033A5EE /* Product Marketplace.app */;
@@ -215,11 +239,18 @@
 				D12D2D3129F37332002673BC /* AvatarView.swift in Sources */,
 				D12D2D2A29F32FA5002673BC /* UserState.swift in Sources */,
 				D12D2D2629F32298002673BC /* AmplifyModels.swift in Sources */,
+				D15AC31729F5888600031165 /* ImagePickerView.swift in Sources */,
+				D15AC31C29F5F06000031165 /* Product.swift in Sources */,
 				D12D2D2729F32298002673BC /* User.swift in Sources */,
 				D12D2D3629F460AE002673BC /* UserProfileView.swift in Sources */,
+				D15AC31929F5EE9C00031165 /* ProductGridCell.swift in Sources */,
 				D12D2D2829F32298002673BC /* User+Schema.swift in Sources */,
+				D15AC32229F5F57600031165 /* HomeRoute.swift in Sources */,
 				D12D2D2C29F32FE2002673BC /* MarketplaceError.swift in Sources */,
 				D12D2D1229F31F08002673BC /* Product_MarketplaceApp.swift in Sources */,
+				D15AC32029F5F14800031165 /* Products+Extensions.swift in Sources */,
+				D15AC32429F5F60600031165 /* PostProductView.swift in Sources */,
+				D15AC31E29F5F06B00031165 /* Product+Schema.swift in Sources */,
 				D12D2D1329F31F08002673BC /* LoginView.swift in Sources */,
 				D12D2D1429F31F08002673BC /* SignUpView.swift in Sources */,
 				D12D2D3829F46179002673BC /* MainTabView.swift in Sources */,
@@ -356,6 +387,7 @@
 				DEVELOPMENT_TEAM = WYN4MP6QF4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Needed for images";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -385,6 +417,7 @@
 				DEVELOPMENT_TEAM = WYN4MP6QF4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Needed for images";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -450,6 +483,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D12D2D3229F373A4002673BC /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		D15AC31429F46FE000031165 /* AWSS3StoragePlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D190620F29F2E8D30033A5EE /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSS3StoragePlugin;
 		};
 		D190621029F2E8D30033A5EE /* Amplify */ = {
 			isa = XCSwiftPackageProductDependency;
