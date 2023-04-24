@@ -13,6 +13,11 @@ struct MainTabView: View {
                 .tabItem {
                     Label("Home", systemImage: "house")
                 }
+            InboxView()
+                .tabItem {
+                    Label("Inbox", systemImage: "message")
+                }
+
             UserProfileView()
                 .tabItem {
                     Label("Account", systemImage: "person")

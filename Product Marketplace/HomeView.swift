@@ -4,11 +4,13 @@
 //
 //  Created by Francisco Alderete on 23/04/2023.
 //
-
+import Amplify
+import Combine
 import SwiftUI
 struct HomeView: View {
     @StateObject var navigationCoordinator: HomeNavigationCoordinator = .init()
     @State var products: [Product] = []
+    @State var tokens: Set<AnyCancellable> = []
     
     let columns = Array(repeating: GridItem(.flexible(minimum: 150)), count: 2)
     
@@ -39,8 +41,31 @@ struct HomeView: View {
                 case .productDetails(let product):
                     ProductDetailsView(product: product)
                         .environmentObject(navigationCoordinator)
+                case .chat(chatRoom: let chatRoom, otherUser: let user, productId: let id):
+                    MessagesView(chatRoom: chatRoom, otherUser: user, productId: id)
                 }
             }
         }
+        .onAppear(perform: observeProducts)
+    }
+    func observeProducts() {
+        Amplify.Publisher.create(
+            Amplify.DataStore.observeQuery(for: Product.self)
+        )
+        .map(\.items)
+        .receive(on: DispatchQueue.main)
+        .sink(
+            receiveCompletion: { print($0) },
+            receiveValue: { products in
+                self.products = products.sorted {
+                    guard
+                        let date1 = $0.createdAt,
+                        let date2 = $1.createdAt
+                    else { return false }
+                    return date1 > date2
+                }
+            }
+        )
+        .store(in: &tokens)
     }
 }
